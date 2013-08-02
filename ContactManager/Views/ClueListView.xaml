@@ -1,0 +1,54 @@
+﻿<UserControl x:Class="ContactManager.Views.ContactListView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:ComponentModel="clr-namespace:System.ComponentModel;assembly=WindowsBase"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <CollectionViewSource x:Key="clueSource"
+                              Source="{Binding AllClues}">
+            <CollectionViewSource.SortDescriptions>
+                <ComponentModel:SortDescription PropertyName="LookupClue"/>
+            </CollectionViewSource.SortDescriptions>
+        </CollectionViewSource>
+    </UserControl.Resources>
+    <DockPanel Margin="5">
+        <Border DockPanel.Dock="Top"
+                Style="{StaticResource header}">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text=""/> <!--Leave this here in case this needs to change.-->
+                <TextBlock Text="{Binding AllClues.Count}"/>
+                <TextBlock Text=" Clues"/>
+            </StackPanel>
+        </Border>
+        <StackPanel DockPanel.Dock="Bottom"
+                    Style="{StaticResource buttonPanel}">
+            <Button Content="Close"
+                    Click="Close_Click"/>
+        </StackPanel>
+        <!--Main navigation for finding and opening a clue.-->
+        <ListView Margin="5"
+                  ItemsSource="{Binding Source={StaticResource clueSource}}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn>
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <!--Open button to the left of Clue Text column.-->
+                                <Button Style="{StaticResource openButton}"
+                                        Click="OpenClue_Click"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>                   
+                    <GridViewColumn Header="Clue Text"
+                                    DisplayMemberBinding="{Binding ClueText}"
+                                    />
+                    <GridViewColumn Header="Date Entered"
+                                    DisplayMemberBinding="{Binding Path=DateEntered}"/>
+                    </GridView>
+            </ListView.View>
+        </ListView>
+    </DockPanel>
+</UserControl>
