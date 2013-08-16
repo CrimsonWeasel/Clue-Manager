@@ -24,3 +24,29 @@ C:\Documents and Settings\RRinehart\My Documents\Visual Studio 2010\Projects\Con
 C:\Documents and Settings\RRinehart\My Documents\Visual Studio 2010\Projects\ContactManager\ContactManager\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Documents and Settings\RRinehart\My Documents\Visual Studio 2010\Projects\ContactManager\ContactManager\obj\x86\Debug\ContactManager.exe
 C:\Documents and Settings\RRinehart\My Documents\Visual Studio 2010\Projects\ContactManager\ContactManager\obj\x86\Debug\ContactManager.pdb
+C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ContactManager\obj\x86\Debug\ContactManager.exe
+C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ContactManager\obj\x86\Debug\ContactManager.pdb
+C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ContactManager\bin\Debug\ContactManager.exe
+C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ContactManager\bin\Debug\ContactManager.pdb
+C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ContactManager\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ContactManager\obj\x86\Debug\Resources\ColorsAndBrushes.baml
+C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ContactManager\obj\x86\Debug\Resources\DefaultStyles.baml
+C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ContactManager\obj\x86\Debug\UserControls\SearchBar.baml
+C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ContactManager\obj\x86\Debug\UserControls\SideBar.baml
+C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ContactManager\obj\x86\Debug\Views\ClueListView.baml
+C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ContactManager\obj\x86\Debug\Views\EditClueView.baml
+C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ContactManager\obj\x86\Debug\Shell.g.cs
+C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ContactManager\obj\x86\Debug\UserControls\SearchBar.g.cs
+C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ContactManager\obj\x86\Debug\UserControls\SideBar.g.cs
+C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ContactManager\obj\x86\Debug\Views\ClueListView.g.cs
+C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ContactManager\obj\x86\Debug\Views\EditClueView.g.cs
+C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ContactManager\obj\x86\Debug\App.g.cs
+C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ContactManager\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ContactManager\obj\x86\Debug\ContactManager_MarkupCompile.cache
+C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ContactManager\obj\x86\Debug\ContactManager_MarkupCompile.lref
+C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ContactManager\obj\x86\Debug\App.baml
+C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ContactManager\obj\x86\Debug\Shell.baml
+C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ContactManager\obj\x86\Debug\ContactManager.g.resources
+C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ContactManager\obj\x86\Debug\ContactManager.Properties.Resources.resources
+C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ContactManager\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ContactManager\obj\x86\Debug\GenerateResource.write.1.tlog

@@ -1,0 +1,7 @@
+C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ClueManager.Data\bin\Debug\ClueManager.Data.dll
+C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ClueManager.Data\bin\Debug\ClueManager.Data.pdb
+C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ClueManager.Data\bin\Debug\ContactManager.exe
+C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ClueManager.Data\bin\Debug\ContactManager.pdb
+C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ClueManager.Data\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ClueManager.Data\obj\Debug\ClueManager.Data.dll
+C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ClueManager.Data\obj\Debug\ClueManager.Data.pdb

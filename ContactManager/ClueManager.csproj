@@ -55,10 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Model\Answer.cs" />
-    <Compile Include="Model\Clue.cs" />
-    <Compile Include="Model\ClueRepository.cs" />
-    <Compile Include="Model\Origins.cs" />
+    <Compile Include="ViewModels\Answer.cs" />
+    <Compile Include="ViewModels\Clue.cs" />
+    <Compile Include="ViewModels\Origins.cs" />
     <Compile Include="Notifier.cs" />
     <Compile Include="Presenters\ApplicationPresenter.cs" />
     <Compile Include="Presenters\ClueListPresenter.cs" />
