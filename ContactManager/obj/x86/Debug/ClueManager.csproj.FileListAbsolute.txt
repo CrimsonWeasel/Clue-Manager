@@ -50,3 +50,5 @@ C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ContactMana
 C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ContactManager\obj\x86\Debug\ContactManager.Properties.Resources.resources
 C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ContactManager\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ContactManager\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\src\Clue-Manager\ContactManager\obj\x86\Debug\ContactManager.exe
+C:\src\Clue-Manager\ContactManager\obj\x86\Debug\ContactManager.pdb

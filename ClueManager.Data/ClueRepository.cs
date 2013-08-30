@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.IO;
+using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
-using ClueManager;
 using ContactManager.Model;
 
-namespace ContactManager.Model
+namespace ClueManager.Data
 {
     public class ClueRepository
     {
