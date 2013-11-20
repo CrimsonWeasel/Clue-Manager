@@ -11,11 +11,11 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using ContactManager.Views;
-using ContactManager.Presenters;
-using ContactManager.Model;
+using ClueManager.Views;
+using ClueManager.Presenters;
+using ClueManager.Model;
 
-namespace ContactManager.Views
+namespace ClueManager.Views
 {
     /// <summary>
     /// Interaction logic for ContactListView.xaml
@@ -46,7 +46,7 @@ namespace ContactManager.Views
         {
             Button button = e.OriginalSource as Button;
             if (button != null)
-                Presenter.OpenClue(button.DataContext as Clue);
+                Presenter.OpenClue(button.DataContext as PrimaryViewModel);
         }
     }
 }

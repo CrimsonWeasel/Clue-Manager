@@ -4,7 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ContactManager
+//namespace ContactManager
+namespace ClueManager
 {
     [Serializable]
     public abstract class Notifier : INotifyPropertyChanged

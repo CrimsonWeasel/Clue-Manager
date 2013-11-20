@@ -10,11 +10,11 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using ContactManager.Presenters;
+using ClueManager.Presenters;
 using System.Windows.Controls;
-using ContactManager.Model;
+using ClueManager.Model;
 
-namespace ContactManager.UserControls
+namespace ClueManager.UserControls
 {
     /// <summary>
     /// Interaction logic for SideBar.xaml
@@ -46,7 +46,7 @@ namespace ContactManager.UserControls
             Button button = e.OriginalSource as Button;
 
             if (button != null)
-                Presenter.OpenClue(button.DataContext as Clue);
+                Presenter.OpenClue(button.DataContext as PrimaryViewModel);
         }
 
         //This ended up not being able to be adapted to what I want

@@ -5,3 +5,6 @@ C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ClueManager
 C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ClueManager.Data\obj\Debug\ResolveAssemblyReference.cache
 C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ClueManager.Data\obj\Debug\ClueManager.Data.dll
 C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ClueManager.Data\obj\Debug\ClueManager.Data.pdb
+C:\Users\RRinehart\Documents\Clue-Manager\ClueManager.Data\obj\Debug\ClueManager.Data.csprojResolveAssemblyReference.cache
+C:\Users\RRinehart\Documents\Clue-Manager\ClueManager.Data\obj\Debug\ClueManager.Data.dll
+C:\Users\RRinehart\Documents\Clue-Manager\ClueManager.Data\obj\Debug\ClueManager.Data.pdb

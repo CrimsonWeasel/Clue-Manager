@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ContactManager\obj\x86\Debug\
-ContactManager
+C:\Users\RRinehart\Documents\Clue-Manager\ContactManager\obj\x86\Debug\
+ClueManager
 none
 false
 DEBUG;TRACE
-C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ContactManager\App.xaml
+C:\Users\RRinehart\Documents\Clue-Manager\ContactManager\App.xaml
 7-676325902
 
-171970050666
-12-1547151337
+182123233824
+13183981565
 Resources\ColorsAndBrushes.xaml;Resources\DefaultStyles.xaml;Shell.xaml;UserControls\SearchBar.xaml;UserControls\SideBar.xaml;Views\ClueListView.xaml;Views\EditClueView.xaml;
 
 True

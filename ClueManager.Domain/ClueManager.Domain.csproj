@@ -46,16 +46,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClueManager.Data\ClueManager.Data.csproj">
-      <Project>{68129FE4-F7C4-4F9E-ABD4-3B8290C00D83}</Project>
-      <Name>ClueManager.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ContactManager\ClueManager.csproj">
-      <Project>{8CBF01A4-4A2C-4631-9E33-4C4DBAFDAEC6}</Project>
-      <Name>ClueManager</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Domain.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

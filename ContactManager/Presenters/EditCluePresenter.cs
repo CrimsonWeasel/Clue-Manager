@@ -2,27 +2,27 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using ContactManager.Model;
-using ContactManager.Views;
+//using ClueManager.Model;   //Stopped working after namespace change
+using ClueManager.Views;
 using System.Collections;
 using System.Collections.ObjectModel;
+using ClueManager.ViewModels;
 
-
-namespace ContactManager.Presenters
+namespace ClueManager.Presenters
 {
     public class EditCluePresenter : PresenterBase<EditContactView>
     {
         private readonly ApplicationPresenter _applicationPresenter;
-        private readonly Clue _clue;
+        private readonly ClueViewModel _clue;
 
-        public EditCluePresenter(ApplicationPresenter applicationPresenter, EditContactView view, Clue clue) :
+        public EditCluePresenter(ApplicationPresenter applicationPresenter, EditContactView view, PrimaryViewModel clue) :
             base(view, "Clue.LookupClue")
         {
             _applicationPresenter = applicationPresenter;
             _clue = clue;
         }
 
-        public Clue Clue
+        public ClueViewModel Clue
         {
             get { return _clue; }
         }

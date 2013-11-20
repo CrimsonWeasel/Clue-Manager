@@ -40,13 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClueDetails.cs" />
     <Compile Include="ClueRepository.cs" />
+    <Compile Include="IClueRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SaveClueRequest.cs" />
+    <Compile Include="SaveClueResponse.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ContactManager\ClueManager.csproj">
-      <Project>{8CBF01A4-4A2C-4631-9E33-4C4DBAFDAEC6}</Project>
-      <Name>ClueManager</Name>
+    <ProjectReference Include="..\ClueManager.Domain\ClueManager.Domain.csproj">
+      <Project>{df5c71f4-aa42-4c20-ba51-02494f50a7ce}</Project>
+      <Name>ClueManager.Domain</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

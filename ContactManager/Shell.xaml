@@ -1,7 +1,7 @@
-﻿<Window x:Class="ContactManager.Shell"
+﻿<Window x:Class="ClueManager.Shell"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:uc="clr-namespace:ContactManager.UserControls"
+        xmlns:uc="clr-namespace:ClueManager.UserControls"
         Title="Clue Manager" Height="600" Width="800">
     <DockPanel>
         <uc:SearchBar DockPanel.Dock="Top" />

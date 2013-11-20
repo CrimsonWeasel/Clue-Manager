@@ -8,7 +8,7 @@
     <ProjectGuid>{8CBF01A4-4A2C-4631-9E33-4C4DBAFDAEC6}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ContactManager</RootNamespace>
+    <RootNamespace>ClueManager</RootNamespace>
     <AssemblyName>ContactManager</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
@@ -55,9 +55,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="ViewModels\Answer.cs" />
-    <Compile Include="ViewModels\Clue.cs" />
-    <Compile Include="ViewModels\Origins.cs" />
+    <Compile Include="ViewModels\AnswerViewModel.cs" />
+    <Compile Include="ViewModels\ClueViewModel.cs" />
+    <Compile Include="ViewModels\PrimaryViewModel.cs" />
+    <Compile Include="ViewModels\OriginsViewModel.cs" />
     <Compile Include="Notifier.cs" />
     <Compile Include="Presenters\ApplicationPresenter.cs" />
     <Compile Include="Presenters\ClueListPresenter.cs" />
@@ -137,7 +138,12 @@
     </None>
     <AppDesigner Include="Properties\" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\ClueManager.Data\ClueManager.Data.csproj">
+      <Project>{68129fe4-f7c4-4f9e-abd4-3b8290c00d83}</Project>
+      <Name>ClueManager.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

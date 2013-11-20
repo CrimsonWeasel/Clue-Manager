@@ -7,3 +7,8 @@ C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ClueManager
 C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ClueManager.Domain\bin\Debug\ContactManager.pdb
 C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ClueManager.Domain\obj\Debug\ClueManager.Domain.dll
 C:\Documents and Settings\RRinehart\My Documents\GitHub\Clue-Manager\ClueManager.Domain\obj\Debug\ClueManager.Domain.pdb
+C:\Users\RRinehart\Documents\Clue-Manager\ClueManager.Domain\bin\Debug\ClueManager.Domain.dll
+C:\Users\RRinehart\Documents\Clue-Manager\ClueManager.Domain\bin\Debug\ClueManager.Domain.pdb
+C:\Users\RRinehart\Documents\Clue-Manager\ClueManager.Domain\obj\Debug\ClueManager.Domain.csprojResolveAssemblyReference.cache
+C:\Users\RRinehart\Documents\Clue-Manager\ClueManager.Domain\obj\Debug\ClueManager.Domain.dll
+C:\Users\RRinehart\Documents\Clue-Manager\ClueManager.Domain\obj\Debug\ClueManager.Domain.pdb

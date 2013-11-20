@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using ContactManager.Views;
+using ClueManager.Views;
 using System.Collections.ObjectModel;
-using ContactManager.Model;
+//using ClueManager.Model;
 
-namespace ContactManager.Presenters
+namespace ClueManager.Presenters
 {
     public class ClueListPresenter: PresenterBase<ContactListView>
     {
@@ -19,7 +19,7 @@ namespace ContactManager.Presenters
         }
 
         
-        public ObservableCollection<Clue> AllClues
+        public ObservableCollection<PrimaryViewModel> AllClues
         {
             get { return _applicationPresenter.CurrentClues; }
         }
@@ -29,7 +29,7 @@ namespace ContactManager.Presenters
             get { return "All Clues"; }
         }
 
-        public void OpenClue(Clue clue)
+        public void OpenClue(PrimaryViewModel clue)
         {
             _applicationPresenter.OpenClue(clue);
         }

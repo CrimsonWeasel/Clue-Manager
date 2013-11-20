@@ -11,10 +11,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using ContactManager.Model;
-using ContactManager.Presenters;
+using ClueManager.Model;
+using ClueManager.Presenters;
 
-namespace ContactManager
+namespace ClueManager
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

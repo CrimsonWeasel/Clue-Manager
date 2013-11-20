@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Collections;
-namespace ContactManager.Model
+
+//namespace ContactManager.Model
+namespace ClueManager.ViewModels
 {
     [Serializable]
-    public class Answer : Notifier, IComparable
+    public class AnswerViewModel : Notifier, IComparable
     {
         //DELETE: //private string answerTextTest;
         private string explanation;
@@ -16,7 +18,7 @@ namespace ContactManager.Model
         private DateTime dateAnswerEntered = DateTime.Today;
         private string answerText;       
         
-        public Answer(string newAnswerText) {
+        public AnswerViewModel(string newAnswerText) {
             answerText = newAnswerText;    
         }
 
@@ -105,7 +107,7 @@ namespace ContactManager.Model
         {
             if (answerCompare == null) return 1;
 
-            Answer otherAnswer = answerCompare as Answer;
+            AnswerViewModel otherAnswer = answerCompare as AnswerViewModel;
             if (otherAnswer != null)
                 return this.AnswerText.CompareTo(otherAnswer.AnswerText);
             else

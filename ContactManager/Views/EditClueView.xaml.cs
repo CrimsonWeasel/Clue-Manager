@@ -11,10 +11,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using ContactManager.Presenters;
+using ClueManager.Presenters;
 using Microsoft.Win32;
 
-namespace ContactManager.Views
+namespace ClueManager.Views
 {
     /// <summary>
     /// Interaction logic for EditContactView.xaml

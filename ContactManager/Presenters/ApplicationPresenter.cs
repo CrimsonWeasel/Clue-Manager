@@ -2,29 +2,34 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using ContactManager.Model;
 using System.Collections.ObjectModel;
-using ContactManager.Views;
+using ClueManager.Views;
 using System.Collections;
+using ClueManager.Properties;
+//using ClueManager.Model;   //Stopped working after namespace change
+using ClueManager.Data;
 
-namespace ContactManager.Presenters
+//namespace ContactManager.Presenters
+namespace ClueManager.Presenters
 {
     public class ApplicationPresenter : PresenterBase<Shell>
     {
-        private readonly ClueRepository _clueRepository;
-        private ObservableCollection<Clue> _currentClues;
+        private readonly ClueRepository _clueRepository; //All wrong, and the same for all that is based on this?
+        private ObservableCollection<PrimaryViewModel> _currentClues;
         //private ObservableCollection<string> answerList;
         private string _statusText;
+
+        ClueDetails clueDetails;
 
         public ApplicationPresenter(Shell view, ClueRepository clueRepository)
             : base(view)
         {
             _clueRepository = clueRepository;
-            _currentClues = new ObservableCollection<Clue>(_clueRepository.FindAll());
+            _currentClues = new ObservableCollection<PrimaryViewModel>(_clueRepository.FindAll());
             //answerList = new ObservableCollection<Clue>();  //This would need to be updated to find the correct list of answers.
         }
 
-        public ObservableCollection<Clue> CurrentClues
+        public ObservableCollection<PrimaryViewModel> CurrentClues
         {
             get { return _currentClues; }
             set
@@ -48,12 +53,12 @@ namespace ContactManager.Presenters
         {
             if (!string.IsNullOrEmpty(criteria) && criteria.Length > 1) //Changed from 2 to 1.
             {
-                CurrentClues = new ObservableCollection<Clue>(_clueRepository.FindCluesByLookup(criteria));
+                CurrentClues = new ObservableCollection<PrimaryViewModel>(_clueRepository.FindCluesByLookup(criteria));
                 StatusText = string.Format("{0} clues found.", CurrentClues.Count);
             }
             else
             {
-                CurrentClues = new ObservableCollection<Clue>(_clueRepository.FindAll());
+                CurrentClues = new ObservableCollection<PrimaryViewModel>(_clueRepository.FindAll());
                 StatusText = "Displaying all clues.";
             }
         }
@@ -62,44 +67,48 @@ namespace ContactManager.Presenters
         {
             if (!string.IsNullOrEmpty(criteria) && criteria.Length > 1) 
             {
-                CurrentClues = new ObservableCollection<Clue>(_clueRepository.FindAnswersByLookup(criteria));
+                CurrentClues = new ObservableCollection<PrimaryViewModel>(_clueRepository.FindAnswersByLookup(criteria));
                 StatusText = string.Format("{0} clues found.", CurrentClues.Count);
             }
             else
             {
-                CurrentClues = new ObservableCollection<Clue>(_clueRepository.FindAll());
+                CurrentClues = new ObservableCollection<PrimaryViewModel>(_clueRepository.FindAll());
                 StatusText = "Displaying all clues.";
             }
         }
 
         public void NewClue()
         {
-            OpenClue(new Clue());
+            OpenClue(new PrimaryViewModel());
         }
 
-        public void OpenClue(Clue clue)
+        public void OpenClue(PrimaryViewModel clue)
         {
             if (clue == null) return;
 
             View.AddTab(new EditCluePresenter(this, new Views.EditContactView(), clue));
         }
 
-        public void AddAnswerToClue (Clue clueToUpdate, string answerText)
+        public void AddAnswerToClue (PrimaryViewModel clueToUpdate, string answerText)
         {
             clueToUpdate.AddNewAnswer(answerText);
         }
         
-        public void SaveClue(Clue clue)
+        public void SaveClue(PrimaryViewModel clue)
         {
             if (!CurrentClues.Contains(clue))
                 CurrentClues.Add(clue);
 
-            _clueRepository.Save(clue);
+            //_clueRepository.Save(clue);
+            //Maybe: 
+            //clueDetails should be what I have here anywhere.
+            SaveClueRequest request = new SaveClueRequest(clueDetails);
+            SaveClueResponse response = _clueRepository.Save(clue);
 
             StatusText = string.Format("Clue {0} was saved.", clue.LookupClue);
         }
 
-        public void DeleteClue(Clue clue)
+        public void DeleteClue(PrimaryViewModel clue)
         {
             if (CurrentClues.Contains(clue))
                 CurrentClues.Remove(clue);

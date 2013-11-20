@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ContactManager.Model
+//namespace ContactManager.Model
+namespace ClueManager.ViewModels
 {
-    public static class Origins
+    public static class OriginsViewModel
     {
         private static readonly List<string> originList;
 
-        static Origins()
+        static OriginsViewModel()
         {
             originList = new List<string>(6);
 
